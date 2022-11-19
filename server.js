@@ -13,10 +13,6 @@ app.use(express.static('public', {
   index: 'index.html'
 }));
 
-// app.get('/', (req, res) => {
-//   res.sendFile(path.join(__dirname, "public", "index.html"));
-// });
-
 app.get('/api/notes', (req, res) => {
   const notes = readNotes();
 
@@ -69,6 +65,10 @@ app.post('/api/notes', jsonParser, (req, res) => {
 // fs.writeFile("db/filename.json", JSON.stringify(reviews), (err) => {
 //   err ? console.error(err) : console.log('success');
 // });
+
+app.get("*", (req,res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+})
 
 
 app.listen(port, () => {

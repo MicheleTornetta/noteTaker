@@ -11,10 +11,10 @@
 ## Acceptance Criteria
 
 ```
--open the Note Taker
+-open the Note Tracker
 -presented with a landing page with a link to a notes page
 -Notes page has existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
-WHEN I enter a new note a Save icon appears
+WHEN I enter a new nonodete a Save icon appears
 WHEN I click on the Save icon
 THEN the new note I have entered is saved and appears in the left-hand column with the other existing notes
 WHEN I click on an existing note in the left-hand column
