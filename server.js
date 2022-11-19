@@ -22,6 +22,24 @@ app.get('/api/notes', (req, res) => {
       .send(JSON.stringify(notes));
 });
 
+app.delete('/api/notes/:noteId', (req, res) => {
+  const id = req.params.noteId;
+
+  const notes = readNotes();
+
+  for (let i = 0; i < notes.length; i++) {
+    if (notes[i].id === id) {
+      notes.splice(i, 1);
+      res.status(200).send('success!');
+
+      saveNotes(notes);
+      return;
+    }
+  }
+
+  res.status(400).send('note not found ;(');
+});
+
 // fs.writeFile("db/filename.json", JSON.stringify(reviews), (err) => {
 //   err ? console.error(err) : console.log('success');
 // });
