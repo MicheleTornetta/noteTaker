@@ -1,1 +1,1 @@
-release: node server
+web: node server
