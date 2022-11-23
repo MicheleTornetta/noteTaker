@@ -12,6 +12,7 @@
 
 ## Application Image 
 ![Application Image](https://github.com/MicheleTornetta/noteTaker/blob/main/Assets/notetakerLandingPage.png)
+![Application Image](https://github.com/MicheleTornetta/noteTaker/blob/main/Assets/notetakerNotespage.png)
 
 ## Installation Instructions
 To install the application, you would download the readme-generator repository (https://github.com/MicheleTornetta/teamprofilegenerator).  From there you would navigate to the directory in the command terminal.  Once there the user will need to type in npm i to download the dependencies. 
